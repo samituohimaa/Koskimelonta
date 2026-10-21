@@ -1,22 +1,18 @@
-﻿#region Using Statements
-using System;
-using System.Collections.Generic;
-using System.Linq;
-#endregion
-
-
-/// <summary>
-/// The main class.
-/// </summary>
-public static class Program
+﻿namespace Koskimelonta
 {
     /// <summary>
-    /// The main entry point for the application.
+    /// The main class.
     /// </summary>
-    [STAThread]
-    static void Main()
+    public static class Program
     {
-        using var game = new Koskimelonta();
-        game.Run();
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [System.STAThread]
+        static void Main()
+        {
+            using var game = new Peli();
+            game.Run();
+        }
     }
 }
